@@ -1,0 +1,14 @@
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\bin\Debug\net8.0\View.exe
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\bin\Debug\net8.0\View.deps.json
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\bin\Debug\net8.0\View.runtimeconfig.json
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\bin\Debug\net8.0\View.dll
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\bin\Debug\net8.0\View.pdb
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.AssemblyInfoInputs.cache
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.AssemblyInfo.cs
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.csproj.CoreCompileInputs.cache
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.dll
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\refint\View.dll
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.pdb
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\View.genruntimeconfig.cache
+C:\Users\PraveenaMurugan\Desktop\C#\MovieTicket\View\obj\Debug\net8.0\ref\View.dll
