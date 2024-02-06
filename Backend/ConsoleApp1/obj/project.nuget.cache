@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVL+6Bk6IYyPakJUHWa5iD213WIIJ2POTKyGt+9h/ngmFZ7M6VJcLap2oIAl34ChELBYzv3CuY4YEoxnSyA1gg==",
+  "dgSpecHash": "/93nFJPL+W9fR8N+cHIByT3EVIR7yjxBDwr1a/jR9Yh1tHPEg0DifLsHERIGVYsYMQzai4gR3urLlYFN1E6hVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PraveenaMurugan\\Desktop\\C#\\MovieTicket\\ConsoleApp1\\Models.csproj",
+  "projectFilePath": "C:\\Users\\PraveenaMurugan\\Desktop\\C#\\MovieTicket\\Backend\\ConsoleApp1\\Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

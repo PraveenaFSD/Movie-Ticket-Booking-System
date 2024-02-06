@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Interfaces;
 using DataLayer.Interfaces;
 using DataLayer.Repositories;
+using Mapper.Implemenations;
+using Mapper.Interfaces;
 using Models.Request;
 using Models.View;
 using System;
@@ -15,10 +17,14 @@ namespace BusinessLayer.Implementations
     public class ShowTimeService : IShowTimeService
     {
         private readonly IShowTimeRepo _showTimeRepo;
+        private readonly IBusinessLayerMapper _businessLayerMapper;
 
-        public ShowTimeService(IShowTimeRepo showTimeRepo)
+     
+        public ShowTimeService(IShowTimeRepo showTimeRepo, IBusinessLayerMapper businessLayerMapper)
         {
             _showTimeRepo=showTimeRepo;
+            _businessLayerMapper = businessLayerMapper;
+
         }
         public async Task<List<DateView>> GetAllDatesByMovie(Guid id)
         {
@@ -33,6 +39,22 @@ namespace BusinessLayer.Implementations
                 }
             }
             return dateViews;
+        }
+
+        public async  Task<List<SeatDetailsView>> GetAllSeatDetails(Guid id)
+        {
+            var seats=await _showTimeRepo.GetSeatDetails(id);
+            List<SeatDetailsView> seatDetailsViews = new List<SeatDetailsView>();
+            if (seats != null)
+            {
+
+                foreach (var item in seats)
+                {
+                    seatDetailsViews.Add(await _businessLayerMapper.SeatDetailsToSeatDetailsView(item));
+                }
+            }
+            return seatDetailsViews;
+
         }
 
         public async Task<List<ShowTimeView>> GetShowTimesByMovie(MovieDateRequest movieDate)

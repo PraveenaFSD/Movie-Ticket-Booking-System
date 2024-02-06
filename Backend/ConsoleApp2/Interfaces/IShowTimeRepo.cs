@@ -1,4 +1,5 @@
-﻿using Models.Request;
+﻿using Models.Entity;
+using Models.Request;
 using Models.View;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace DataLayer.Interfaces
         public Task<List<DateView>> GetAllDates(Guid id);
         public Task<List<ShowTimeView>> GetAllShowTImeByMoveiDate(MovieDateRequest movieDateRequest);
         public Task<bool> UpdateAvailableSeats(UpdateShowTimeRequest updateShowTimeRequest);
+        public Task<List<SeatDetails>> GetSeatDetails(Guid id);
+
 
 
 

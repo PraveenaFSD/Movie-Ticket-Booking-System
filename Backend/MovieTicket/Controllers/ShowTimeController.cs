@@ -58,5 +58,18 @@ namespace MovieTicket.Controllers
             return BadRequest("Update Unsuccessfull");
 
         }
+        [HttpGet("GetAllSeats")]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<ICollection<SeatDetailsView>>> GetAllSeatsAvailable(Guid id)
+        {
+            var dates = await _showTimeService.GetAllSeatDetails(id);
+            if (dates != null)
+            {
+                return Ok(dates);
+            }
+            return BadRequest("Cannot fetch dates ");
+
+        }
     }
 }

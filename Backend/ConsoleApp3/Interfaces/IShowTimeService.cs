@@ -13,6 +13,8 @@ namespace BusinessLayer.Interfaces
         public Task<List<DateView>> GetAllDatesByMovie(Guid id);
         public Task<List<ShowTimeView>> GetShowTimesByMovie(MovieDateRequest movieDate);
         public Task<bool> UpdateAvailableSeats(UpdateShowTimeRequest updateShowTimeRequest);
+        public Task<List<SeatDetailsView>> GetAllSeatDetails(Guid id);
+
 
     }
 }

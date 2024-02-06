@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QlTZb6D8x7Ba8kQKLz6wA1f2HEEyv5AAt3z/NCFbM4eoMZxtm+vSW7iIW+pnN0IGr5wpea3FTmk//ervITtdAQ==",
+  "dgSpecHash": "UY1jUPKcLTp3yQBR4m4+DYFFnHcFj9QYeb8bC8Ya0CvVEVl/tx08fksYS2eYx2GVS/hZzdhr3OzVxII1/F+nEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PraveenaMurugan\\Desktop\\C#\\MovieTicket\\ConsoleApp4\\Mapper.csproj",
+  "projectFilePath": "C:\\Users\\PraveenaMurugan\\Desktop\\C#\\MovieTicket\\Backend\\ConsoleApp4\\Mapper.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using Mapper.Interfaces;
 using System.Reflection.Emit;
 using Mapper.Implemenations;
+using Models.Entity;
 
 namespace DataLayer.Repositories
 {
@@ -63,6 +64,26 @@ namespace DataLayer.Repositories
             }
 
             return showTimeViews;
+        }
+
+        public async Task<List<SeatDetails>> GetSeatDetails(Guid id)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("FetchSeatDetailsByShowTimeID", _connection.GetConnection());
+            adapter.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
+            adapter.SelectCommand.Parameters.Add("@ShowTimeID", SqlDbType.UniqueIdentifier).Value = id;
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            List<SeatDetails> seatDetails = new List<SeatDetails>();
+            foreach (DataRow row in table.Rows)
+            {
+                SeatDetails seat = new SeatDetails();
+                seat.UID = new Guid(row[0].ToString());
+                seat.ShowTimeID= new Guid(row[1].ToString());
+                seat.SeatNumber= int.Parse(row[2].ToString());
+                seat.IsAvailable = bool.Parse(row[3].ToString());
+                seatDetails.Add(seat);
+            }
+            return seatDetails;
         }
 
         public async Task<bool> UpdateAvailableSeats(UpdateShowTimeRequest updateShowTimeRequest)

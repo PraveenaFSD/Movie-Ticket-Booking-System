@@ -1,4 +1,5 @@
 ﻿using Mapper.Interfaces;
+using Models.Entity;
 using Models.Models;
 using Models.Request;
 using Models.View;
@@ -53,6 +54,17 @@ namespace Mapper.Implemenations
             movieView.Image=movie.Image;
             movieView.Certification= movie.Certification;
             return movieView;
+        }
+
+        public async  Task<SeatDetailsView> SeatDetailsToSeatDetailsView(SeatDetails seatDetails)
+        {
+            SeatDetailsView seatDetailsView = new SeatDetailsView();    
+            seatDetails.UID = seatDetails.UID;
+            seatDetailsView.ShowTimeID = seatDetails.ShowTimeID;
+            seatDetailsView.SeatNumber = seatDetails.SeatNumber;
+            seatDetailsView.IsAvailable = seatDetails.IsAvailable;
+            return seatDetailsView;
+
         }
     }
 }

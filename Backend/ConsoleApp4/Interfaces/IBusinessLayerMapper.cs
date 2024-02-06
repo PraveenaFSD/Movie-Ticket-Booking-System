@@ -1,4 +1,5 @@
-﻿using Models.Models;
+﻿using Models.Entity;
+using Models.Models;
 using Models.Request;
 using Models.View;
 using System;
@@ -15,6 +16,8 @@ namespace Mapper.Interfaces
         public Task<LocationDatasView> LocationToLocationDatasView(Location location);
         public Task<MovieView> MovieToMovieView(Movie movie);
         public Task<Booking> BookingRequestToBooking(BookingRequest bookingRequest);
+        public Task<SeatDetailsView> SeatDetailsToSeatDetailsView(SeatDetails seatDetails);
+
 
     }
 }
